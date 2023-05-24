@@ -26,7 +26,7 @@ function find(list) {
             // 元素和下标对应
             i++
             continue
-        } else if (list[i] == list[list[i]) {
+        } else if (list[i] == list[list[i]]) {
             // 出现两个下标重复的元素
             return list[i]
         } else {
