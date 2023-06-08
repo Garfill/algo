@@ -3,10 +3,10 @@
 Q: [https://leetcode.cn/problems/lru-cache/](https://leetcode.cn/problems/lru-cache/)
 
 思路：
-1. 由于要使用 O(1) 复杂度，因此也就需要 位置存储位置，从而做到随机访问，而不是遍历列表
+1. 由于要使用 O(1) 复杂度，因此需要有地方存储node位置，才能随机访问，而不是遍历列表
 2. 基于 1 ，采用hash表映射 （key - node)
 3. 采用双向链表，记录各个节点的 key/value
-4. 如果采用数组记录数据，通过key寻找无法做到 O(1)随机访问
+4. 采用数组记录，需要在hash表中记录每个node 位置，还需要在更新时通过遍历来更新位置O(n)
 
 ```js
 
